@@ -1,7 +1,9 @@
+"use strict";
+// console.log("inside knexfile.js");
 // Update with your config settings.
-require('dotenv').config({path: '../.env'})
+require("dotenv").config({ path: "../.env" });
 module.exports = {
-  client: 'pg',
+  client: "pg",
   connection: {
     host: process.env.POSTGRES_HOSTNAME,
     database: process.env.POSTGRES_DB,
@@ -14,10 +16,10 @@ module.exports = {
     max: 10
   },
   migrations: {
-    tableName: 'knex_migrations',
-    directory: './server/database/migrations'
+    tableName: "knex_migrations",
+    directory: "./server/database/migrations"
   },
   seeds: {
-    directory: './server/database/seeds'
+    directory: "./server/database/seeds"
   }
 };

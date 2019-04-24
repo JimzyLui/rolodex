@@ -1,0 +1,52 @@
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  background-color: #ddd;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 2px 2px #eee;
+}
+
+.btn {
+  padding: 15px;
+  border: 0px;
+  background: #1e5799;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 100%;
+
+  &:disabled {
+    background-color: #ccc;
+  }
+  &.clear {
+    border: 1px solid #1e5799;
+    background-color: white;
+    color: #333;
+  }
+}
+
+.input-group {
+  padding: 15px 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 0px;
+  margin-top: 10px;
+  font-size: 16px;
+  &.error {
+    border: 1px solid red;
+  }
+}
+
+.error {
+  color: red;
+}

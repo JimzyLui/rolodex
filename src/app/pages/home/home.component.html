@@ -1,0 +1,19 @@
+<p [style.backgroundColor]="color">
+  {{ movie }}
+</p>
+
+<!-- <p [hidden]="!show">
+  Found me (using [hidden])
+</p> -->
+
+<!-- <p *ngIf="show">
+  Found me (using ngIf)
+</p> -->
+
+<!-- <button (click)="toggle()">
+  Toggle
+</button> -->
+
+<button (click)="toggle($event, show)">
+  Toggle
+</button>
